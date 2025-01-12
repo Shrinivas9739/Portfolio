@@ -6,7 +6,7 @@ Welcome to my portfolio! This is where I showcase my skills, projects, and accom
 
 - A responsive design that works well on all devices.
 - Showcases my projects, including descriptions and links.
-- Includes an "Skills" section to learn more about my skills.
+- Includes an "Work" section to learn more about my work.
 - A contact form to get in touch with me directly.
   
 ## Technologies Used
