@@ -27,6 +27,10 @@
         nav {
             display: flex;
             justify-content: space-between;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
             align-items: center;
             padding: 0 2rem;
             height: 60px;
@@ -187,42 +191,42 @@
             }
         }
         .secondSection {
-                text-align: center; 
+                text-align: center;
                 padding: 20px 10px;
         }
 
         .secondSection span.text-gray {
-            color: gray; 
-            font-size: 1.2rem; 
-            display: block; 
+            color: gray;
+            font-size: 1.2rem;
+            display: block;
             margin-bottom: 5px;
         }
 
         .secondSection h1 {
-            font-size: 2rem; 
-            font-weight: bold; 
+            font-size: 2rem;
+            font-weight: bold;
             color: white;
-            margin-bottom: 30px; 
+            margin-bottom: 30px;
         }
 
         .work-container {
-            margin-top: 20px; 
+            margin-top: 20px;
         }
 
         .thirdSection {
-            text-align: center; 
-            padding: 20px 10px; 
+            text-align: center;
+            padding: 20px 10px;
         }
 
         .thirdSection span.text-gray {
             color: gray;
-            font-size: 1.2rem; 
+            font-size: 1.2rem;
             display: block;
-            margin-bottom: 5px; 
+            margin-bottom: 5px;
         }
 
         .thirdSection h1 {
-            font-size: 2rem; 
+            font-size: 2rem;
             font-weight: bold;
             color: white;
             margin-bottom: 30px;
@@ -278,7 +282,7 @@
         }
 
         .fourthSection {
-            background-color: #2c3e50; 
+            background-color: #2c3e50;
             padding: 60px 20px;
         }
 
@@ -315,13 +319,13 @@
 
         .contact-info h2 {
             font-size: 1.8rem;
-            color: #ecf0f1; 
+            color: #ecf0f1;
             margin-bottom: 20px;
         }
 
         .contact-info p {
             font-size: 1.1rem;
-            color: #bdc3c7; 
+            color: #bdc3c7;
             margin-bottom: 15px;
         }
 
@@ -338,15 +342,27 @@
         }
 
         .contact-info a {
-            color: #3498db; 
+            color: #3498db;
             text-decoration: none;
             font-weight: 500;
         }
 
         .contact-info a:hover {
             text-decoration: underline;
-            color: #1abc9c;  
+            color: #1abc9c;
         }
+
+        .footer {
+            background-color: rgb(1, 1, 62);
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+            font-size: 1rem;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
 
 
     </style>
@@ -367,7 +383,6 @@
     </header>
 
     <main>
-        <!-- Home Section -->
         <section id="home" class="firstSection">
             <div class="leftSection">
                 Hi, my name is <span class="purple">Shrinivas</span>. <br>
@@ -379,6 +394,7 @@
                     <li>Python Programming</li>
                     <li>Machine Learning</li>
                     <li>Deep Learning</li>
+                    <li>Basic Java</li>
                     <li>MySQL</li>
                 </ul>
             </div>
@@ -390,6 +406,8 @@
                 </div>
             </div>
         </section>
+
+        <hr>
 
         <section id="work" class="secondSection">
             <span class="text-gray">What I have done so far</span>
@@ -426,12 +444,11 @@
                 </div>
 
                 <div class="work-item">
-                    <img src="C.png" alt="C Programming Icon">
+                    <img src="java.png" alt="C Programming Icon">
                     <div class="work-content">
-                        <div class="work-title">C Programming</div>
+                        <div class="work-title">Basic Java Programming</div>
                         <div class="work-desc">
-                            I have basic knowledge of C programming, covering topics like loops, arrays, functions, and structures.
-                        </div>
+                            I have basic knowledge of Java programming, covering topics like data types, variables, conditional statements, loops, arrays, classes and objects, constructors, and basic concepts of inheritance and methods.                        </div>
                     </div>
                 </div>
 
@@ -459,6 +476,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="work-item">
                     <img src="vehicle.png" alt="Vehicle Counter Icon">
                     <div class="work-content">
@@ -468,6 +486,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="work-item">
                     <img src="face.png" alt="Automatic Attendance Icon">
                     <div class="work-content">
@@ -477,15 +496,17 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="work-item">
-                    <img src="hotel.png" alt="Hotel Management Icon">
+                    <img src="school.png" alt="Hotel Management Icon">
                     <div class="work-content">
-                        <div class="work-title">Hotel Management System</div>
+                        <div class="work-title">Student Management System (GUI)</div>
                         <div class="work-desc">
-                            This system allows the management of hotel operations such as adding, deleting, resetting, and updating customer details along with billing. It uses SQL for data storage and includes a GUI for ease of use.
+                            This system allows the management of student records such as adding, editing, deleting, and viewing student details. It features a user-friendly GUI built using Java Swing and uses SQL for backend data storage and retrieval. The application also includes login functionality and a dashboard for streamlined access to all major features.
                         </div>
                     </div>
                 </div>
+
                 <div class="work-item">
                     <img src="brain.png" alt="Brain Tumor Icon">
                     <div class="work-content">
@@ -495,7 +516,6 @@
                         </div>
                     </div>
                 </div>
-
 
                 <div class="work-item">
                     <img src="flask.png" alt="Blog Application Icon">
@@ -508,6 +528,8 @@
                 </div>
 
         </section>
+
+
         <section id="contact" class="fourthSection">
             <span class="text-gray">Get in Touch</span>
             <h1>Contact Me</h1>
@@ -524,11 +546,11 @@
                 </div>
             </div>
         </section>
-
-        <footer>
-            <p>&copy; 2025 Shrinivas Sanjay Bhakoji. All rights reserved.</p>
-        </footer>
-
     </main>
+    <footer class="footer">
+        <p>&copy; 2025 Shrinivas. All rights reserved.</p>
+    </footer>
+
+
 </body>
 </html>
